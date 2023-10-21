@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Dr. Jeevagan Ayyanathan - Blog</title>
+</head>
+
+<body>
+    <div class="modal fade contact-form__modal" tabindex="-1" role="dialog" aria-labelledby="contact form"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content pop-modal">
+                <div class="container-fluid">
+                    <div class="row align-items-stretch">
+                        <div class="col-lg-6 d-none d-lg-flex contact-form__left">
+                            <img src="./img/cropimg-01.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 contact-form__right">
+                            <button data-dismiss="modal" aria-label="Close" class="contact-form__close"><img
+                                    src="./img/cancelbutton.svg" alt=""></button>
+                            <div class="contact-form__content">
+                                <h2 class="section-title">Contact us</h2>
+                                <form action="./formAction.php" class="contact-form__form eng">
+                                    <div class="form-row">
+                                        <div class="col-xl-3">
+                                            <label for="name">Name</label>
+                                        </div>
+                                        <div class="col-xl-9">
+                                            <input type="text" id="name" name="name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-xl-3">
+                                            <label for="email">Email ID</label>
+                                        </div>
+                                        <div class="col-xl-9">
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-xl-3">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                        <div class="col-xl-9">
+                                            <input type="text" id="phone" name="phone" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-xl-3">
+                                            <label for="message">Message</label>
+                                        </div>
+                                        <div class="col-xl-9">
+                                            <textarea name="message" class="form-control" id="message"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary float-right"
+                                        style="margin-right: 30px;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TOP SECTION------------------ -->
+    <header>
+        <!-- <section class="grey-section">
+            <div class="container">
+                <div class="top-info">
+                    <div class="quotes">
+                        <p>STAY FIT ! STAY HEALTHY !! STAY HAPPY !!!</p>
+                    </div>
+                    <div class="email">
+                        <p><img src="./img/mail.png" alt="mail"> jeevaganayyanathan@gmail.com</p>
+                    </div>
+                </div> 
+            </div>
+        </section> -->
+
+        <div class="nav-sticky">
+            <div class="container">
+                <div class="navbar">
+                    <a href="./index.html"><img src="./img/logo-011.svg"
+                            style="width:273px; height: 60px; margin-top:-10px" alt="logo"></a>
+                    <div class="navbar__right">
+
+                        <ul class="navbar__right--bottom">
+                            <li><a class="nav-link" href="index.html">HOME</a></li>
+                            <li><a class="nav-link active" href="./aboutme.html">ABOUT</a></li>
+                            <!-- <li><a class="nav-link"  href="./endoscope.html">ELECTIONS</a></li> -->
+                            <li><a class="nav-link" href="./blogall.html"
+                                    style="color: black; font-family: 'cera_probold';">NEWS & EVENTS</a></li>
+                            <li><a class="nav-link" href="./gallery.html">GALLERY</a></li>
+                            <li><a class="nav-link" data-toggle="modal" data-target=".contact-form__modal">CONTACT</a>
+                            </li>
+                            <!-- <a href="birthdaywishes.html"><button type="button" class="vote-btn">Wish for Thalapathy</button></a> -->
+                        </ul>
+                        <div class="side-close">
+                            <button class=" btn btn-clear hamburger" onclick="showNav()">☰</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIDE MENU POP -->
+        <div class="sidebars">
+            <div class="sidenav-inner">
+                <a href="javascript:void(0)" class="sidenav-closebtn" onclick="closeNav()">&times;</a>
+                <ul class="side-popup">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./aboutme.html">ABOUT</a></li>
+                    <!-- <li><a href="./endoscope.html">ELECTIONS</a></li> -->
+                    <li><a class="nav-active" href="./blogall.html"
+                            style="color: #ffb000; font-family: 'cera_probold';">NEWS & EVENTS</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a data-toggle="modal" data-target=".contact-form__modal">CONTACT</a></li>
+                    <li>
+                        <select id="language1" class="side-lang-selector">
+                            <option value="english" selected>ENG</option>
+                            <option value="tamil">தமிழ்</option>
+                        </select>
+                    </li>
+                    <a href="birthdaywishes.html"><button type="button" class="vote-btnstick">Wish for Thalapathy</button></a>
+                </ul>
+            </div>
+        </div>
+
+
+        <section class="logo-nav-section">
+            <div class="container">
+                <div class="logo-nav">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo-011.svg"
+                                style="width:273px; height: 60px; margin-top:-10px" alt="logo"></a>
+                    </div>
+                    <div class="nav">
+                        <div class="topnav" id="myTopnav">
+                            <a class="nav-link" href="index.html">HOME</a>
+                            <a class="nav-link" href="aboutme.html">ABOUT</a>
+                            <!-- <a class="nav-link" href="endoscope.html">ELECTIONS</a> -->
+                            <a class="nav-link  active" href="blogall.html"
+                                style="color: black; font-family: 'cera_probold';">NEWS & EVENTS</a>
+                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                            <a class="nav-link" data-toggle="modal" data-target=".contact-form__modal">CONTACT</a>
+                            <li class="nav-item">
+                                <div class="lang-drop">
+                                    <select id="language" class="lang-selector">
+                                        <option value="english" selected>ENG</option>
+                                        <option value="tamil">தமிழ்</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <!-- <a href="birthdaywishes.html"><button type="button" class="vote-btn">Wish for Thalapathy</button></a> -->
+                        </div>
+
+                    </div>
+                    <div class="side-close">
+                        <button class=" btn btn-clear hamburger" onclick="showNav()">☰</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="modal fade" id="aboutModal6" tabindex="-1" role="dialog" aria-labelledby="aboutModal6"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>A.R.J College student got 7<sup>th</sup> rank in state level</h2>
+                    <div class="about-modal-header-img7">
+                        <img class="img-fluid" src="./img/n1.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>A.R.J Post Graduate Engineering student Ms. Priyanka secures 7<sup>th</sup> Rank in the Anna
+                                        University examination for the academic year 2019.College Correspondent Dr.
+                                        Jeevagan Ayyanathan of A.R.J Group of Educational Institutions felicitated the
+                                        student. Priyanka is a shining example to the standard of education in A.R.J
+                                        Group of Educational Institutions.</p>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal7" tabindex="-1" role="dialog" aria-labelledby="aboutModal7"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>Mega Job Fair for A.R.J students </h2>
+                    <div class="about-modal-header-img8">
+                        <img class="img-fluid" src="./img/n2.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Mega Job Fair conducted in the campus of A.R.J Group of Educational Institutions.
+                                        300 Engineering Graduates and 350 Arts and Science Graduates got placement in
+                                        the campus selection in renowned Companies like Samsung, Wipro, Rikkan, Aptech,
+                                        Fairplex, and Modin.</p>
+
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal8" tabindex="-1" role="dialog" aria-labelledby="aboutModal8"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>Poor student’s paradise – A.R.J Group of Institutions</h2>
+                    <div class="about-modal-header-img9">
+                        <img class="img-fluid" src="./img/n3.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Dr. Jeevagan Ayyanathan’s dream of quality education to Rural students coming
+                                        true in Edayarnatham, Mannargudi. Dr. Jeevagan Ayyanathan’s Annai Ammani Ammal
+                                        Trust offers world class Engineering Education to the students of Mannargudi at
+                                        an affordable cost from 150 students to 2500 students in 18 Years. For a variety
+                                        of Engineering courses in B.E and various post graduate courses, A.R.J.
+                                        Engineering College is a favoured destination for all bright students.</p>
+
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal9" tabindex="-1" role="dialog" aria-labelledby="aboutModal9"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>“Katral Nutpangal” book launch event of Sri Venketaswara Vidhyalaya</h2>
+                    <div class="about-modal-header-img10">
+                        <img class="img-fluid" src="./img/n4.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Katral Nutpangal – a book launch event happened in Sri Venketaswara Vidhyalaya
+                                        Auditorium. Dr. Jeevagan Ayyanathan launched the book and it was received by the
+                                        head of Thanjavur Ancient city Arima Association. Mr.Jayapal, Pattukottai
+                                        District Officer presided over the event.</p>
+
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal10" tabindex="-1" role="dialog" aria-labelledby="aboutModal0"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>Venkateswara College Student got awarded “Ooviyasaaral Award”</h2>
+                    <div class="about-modal-header-img11">
+                        <img class="img-fluid" src="./img/n6.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Venkateswara Arts and Science College students S. Santhini and R. Jyothika
+                                        awarded “Ooviyasaaral Award” from Dr. Jeevagan Ayyanathan which was conducted by
+                                        Namakal Kurinji Kabilar and District Tamil Sangam. Essay competition winner R.
+                                        Neevi was awarded as “Elakiya Selvar Award”. Poetry competition winner P.
+                                        Archana was awarded as “Paavalar Award”. Awards were felicitated by
+                                        Correspondent of A.R.J Group of Institutions Dr. Jeevaga Ayyanathan.</p>
+                                </div>
+                                <!-- <div class="co-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal11" tabindex="-1" role="dialog" aria-labelledby="aboutModal11"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>K.M. Ayyanathan Memorial Tribute</h2>
+                    <div class="about-modal-header-img12">
+                        <img class="img-fluid" src="./img/n5.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>A.R.J Engineering College and A.R.J Group of Institutions Officer K.M
+                                        Ayyanathan’s Memorial Idol was launched by son Dr. Jeevagan Ayyanathan.
+                                        Engineering students Head Loganathan, Polytechnic students Chief Kamalakannan,
+                                        A.R.J College Managing Director Selvaraj and C.B.S.E School Deputy Chief
+                                        Gopinathan, Vice Presidents, Professors, teachers and students were attended
+                                        this event.</p>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="modal fade" id="aboutModal12" tabindex="-1" role="dialog" aria-labelledby="aboutModal12"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="container-fluid modal-content">
+                    <div class="about-modal-header">
+                        <div class="container">
+                            <button class="about-modal-header__close" type="button" data-dismiss="modal"
+                                aria-label="Close">&times;</button>
+                        </div>
+                    </div>
+                    <h2>Dr. Jeevagan Ayyanathan donated 1 Lakh for "Nalai Nan IAS"</h2>
+                    <div class="about-modal-header-img12">
+                        <img class="img-fluid" src="./img/n7.jpg">
+                    </div>
+                    <div class="about-modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Dr. Jeevagan Ayyanathan donated 1 Lakh for "Nalai Nan IAS" on behalf of Visionary Trust, Perauvarani.
+                                        Event was felicitated by Thiru. M.V. Muthuramalingam, Chairman, Velammal Educational Trust
+                                        Thiru. M. Jaganathan Formerly Senior General Manager, TAFE, Chennai.
+                                        Thiru. V. Anbuselvan IAS Formerly District Collector, Cuddalore 
+                                        & Thiru. S. Balachander IAS Sub Collector, Pattukkottai.</p>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="blogAll">
+            <div class="container">
+                <div class="blogall-img">
+                    <div class="blogall-content col-12">
+                        <!-- <img src="img/latestnews.png" alt=""> -->
+                        <h1 class="blogall-heading1">Serve for the people and thrive for their better life
+                        </h1>
+                        <!-- <p class="blogall-heading2"><span>DR.JEEVAGAN AYYANATHAN</span></p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- PRABUDOSS SAYS---------------- -->
+    <section class="blogall-blog">
+        <div class="container">
+            <div class="blogall-news-feed">
+                <div class="blogall-prabudoss-heading">
+                    <h3>DR.JEEVAGAN AYYANATHAN
+                    </h3>
+                </div>
+                <div class="blogall-news-link">
+                    <div class="blogall-news-nav">
+                        <!-- <a class="blogall-nav-link active" href="#home" style="color: black; font-family: 'cera_probold';">#DailyTips</a>
+                            <a class="blogall-nav-link" href="#news">#latestNews</a>
+                            <a class="blogall-nav-link" href="#about">#Awareness</a>
+                            <a class="blogall-nav-link" href="#about">#FirstAid</a>
+                            <a class="blogall-nav-link" href="#about">#MyThoughts</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogall-multi-blog-section">
+                <div class="blogall-multi-blog-image">
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal12">
+                            <div class="blogall-blog1" style="background-image: url(./img/news7.jpg);">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">Jan 12, 2020</p>
+                                    </div>
+
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>Donated 1 Lakh for "Nalai Nan IAS".</h1>
+                                    <p>Dr. Jeevagan Ayyanathan donated 1 Lakh for "Nalai Nan IAS" on behalf of Visionary Trust, Perauvarani.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal6">
+                            <div class="blogall-blog1">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">Dec 25, 2020</p>
+                                    </div>
+
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>A.R.J College student got 7th rank in state level </h1>
+                                    <p> A.R.J Post Graduate Engineering student Ms. Priyanka secures 7<sup>th</sup> Rank in the
+                                        Anna University examination for the academic year 2019.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal7">
+                            <div class="blogall-blog2">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt=""> Jan 28, 2020</p>
+                                    </div>
+                                    <!-- <div class="hashtag">
+                                            <a href="">#LatestNews</a>
+                                        </div>  -->
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>Mega Job Fair for A.R.J students</h1>
+                                    <p>Mega Job Fair conducted in the campus of A.R.J Group of Educational Institutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal8">
+                            <div class="blogall-blog3">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">Aug 20, 2020</p>
+                                    </div>
+                                    <!-- <div class="hashtag">
+                                            <a href="">#LatestNews</a>
+                                        </div> -->
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>Poor student’s paradise – A.R.J Group of Institutions</h1>
+                                    <p> Dr. Jeevagan Ayyanathan’s dream of quality education to Rural students coming
+                                        true in Edayarnatham, Mannargudi.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal9">
+                            <div class="blogall-blog4">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">Aug 27, 2019</p>
+                                    </div>
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>“Katral Nutpangal” book launch event of Sri Venketaswara Vidhyalaya</h1>
+                                    <p> Dr. Jeevagan Ayyanathan launched the book and it was received by the head of
+                                        Thanjavur Ancient city Arima Association.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal10">
+                            <div class="blogall-blog5">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">Dec4,2020</p>
+                                    </div>
+                                    <!-- <div class="hashtag">
+                                            <a href="">#LatestNews</a>
+                                        </div> -->
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>Venkateswara College Student got awarded “Ooviyasaaral Award”</h1>
+                                    <p>S. Santhini, R. Jyothika from Venkateswara Arts and Science College got awarded
+                                        “Ooviyasaaral Award” from Dr. Jeevagan Ayyanathan.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="blogall-blog-img col-lg-6 mb-4">
+                        <a data-toggle="modal" data-target="#aboutModal11">
+                            <div class="blogall-blog6">
+                                <div class="blogall-blog-date">
+                                    <div class="calendar">
+                                        <p><img src="img/calendar1.png" alt="">04 DEC 2019</p>
+                                    </div>
+                                    <!-- <div class="hashtag">
+                                            <a href="">#LatestNews</a>
+                                        </div>  -->
+                                </div>
+                                <div class="blogall-blog-content">
+                                    <img src="img/arrow1.png" alt="">
+                                    <h1>K.M. Ayyanathan Memorial Tribute</h1>
+                                    <p>A.R.J Engineering College and A.R.J Group of Institutions Officer K.M
+                                        Ayyanathan’s Memorial Idol was launched by son Dr. Jeevagan Ayyanathan on Dec
+                                        04, 2019.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT SECTION---------------------->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-img">
+                <div class="appointment-content col-10">
+                    <img src="img/blueline.png" alt="">
+                    <h1 class="appointment-heading1">BOOK AN APPOINTMENT</h1>
+                    <h1 class="appointment-heading2">Get in touch<br>
+                        with us</h1>
+                </div>
+                <div class="appointment-btn col-2">
+                    <a class="appoint-link" data-toggle="modal" data-target=".contact-form__modal"
+                        >GET APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONTACT SECTION-------------- -->
+    <section class="downSection">
+        <div class="container">
+            <div class="footer-section">
+                <div class="downIcon">
+                    <a href="./index.html"><img src="./img/logo-011.svg" style="width:273px; height: 60px;"
+                            alt="logo"></a>
+                </div>
+                <div class="downMenu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutme.html">ABOUT</a></li>
+                        <!-- <li><a href="endoscope.html">ELECTIONS</a></li> -->
+                        <li><a href="blogall.html">NEWS & EVENTS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a data-toggle="modal" data-target=".contact-form__modal">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-line">
+                <p></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer1-section col-xl-8">
+                    <div class="downPara">
+
+                        <div class="addr">
+
+                            <p><img src="./img/map-pin.svg" style="width: 20px; height: 20px;"><span>Ayyanar Complex, Old
+                                    No - 37 & 38, Pulla Avenue, Shenoynagar. Chennai-30.</span></p>
+
+                        </div>
+
+                        <div class="addr1">
+                            <p><img src="./img/mail.svg"
+                                    style="width: 20px; height: 20px;"><span>drjeevaganayyanathan@gmail.com
+                                    / contact@drjeevagan.com / arjgroup.world@gmail.com / svgroup.world@gmail.com</span>
+                            </p>
+                            <p><img src="./img/phone.svg" style="width: 20px; height: 20px;"><span>+91- 98410 82222
+                                    / +91- 94449 88888</span>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="footer2-section col-xl-4">
+                    <div class="icon-groupD">
+                        <a href="https://www.linkedin.com/in/jeevagan-ayyanathan-b90590203/ " target="blank"><img
+                                src="img/linkedin.svg" alt=" " width="30px" height="30px"></a>
+                        <a href=" https://www.facebook.com/drjeevaganayyanathan" target="blank"><img
+                                src="img/facebook.svg" alt=" " width="30px" height="30px"></a>
+                        <a href="https://www.instagram.com/dr_jeevagan/" target="blank"><img src="img/instagram.svg"
+                                alt=" " width="30px" height="30px"></a>
+                        <a href="https://twitter.com/dr_jeevagan " target="blank"><img src="img/twitter.svg" alt=" "
+                                width="30px" height="30px"></a>
+                    </div>
+                    <div class="copyright">
+                        <ul>
+                            <li><a href="https://drjeevagan.com/">www.drjeevagan.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-------------- -->
+    <footer class="footer-text">
+        <!-- <p>ALL COPYRIGHTS JEEVAGANAYYANATHAN.COM</p> -->
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>பற்றி</title>
+  </head>
+
+  <body>
+    <div
+      class="modal fade contact-form__modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contact form"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content pop-modal">
+          <div class="container-fluid">
+            <div class="row align-items-stretch">
+              <div class="col-lg-6 d-none d-lg-flex contact-form__left">
+                <img src="../img/cropimg-01.jpg" alt="" />
+              </div>
+              <div class="col-lg-6 contact-form__right">
+                <button
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  class="contact-form__close"
+                >
+                  <img src="../img/cancelbutton.svg" alt="" />
+                </button>
+                <div class="contact-form__content">
+                  <h2 class="section-title">எங்களை தொடர்பு கொள்ள</h2>
+                  <form
+                    action="../formAction.php"
+                    class="contact-form__form tamil"
+                  >
+                    <div class="form-row">
+                      <div class="col-xl-3">
+                        <label for="name">பெயர்</label>
+                      </div>
+                      <div class="col-xl-9">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-xl-3">
+                        <label for="email">மின்னஞ்சல் முகவரி</label>
+                      </div>
+                      <div class="col-xl-9">
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-xl-3">
+                        <label for="phone">தொலைபேசி எண்</label>
+                      </div>
+                      <div class="col-xl-9">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-xl-3">
+                        <label for="message">செய்தி</label>
+                      </div>
+                      <div class="col-xl-9">
+                        <textarea
+                          name="message"
+                          class="form-control"
+                          id="message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary float-right"
+                      style="margin-right: 30px"
+                    >
+                      சமர்ப்பிக்கவும்
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOP SECTION------------------- -->
+    <header>
+      <!-- <section class="grey-section">
+            <div class="container">
+                <div class="top-info">
+                    <div class="quotes">
+                        <p>STAY FIT ! STAY HEALTHY !! STAY HAPPY !!!</p>
+                    </div>
+                    <div class="email">
+                        <p><img src="./img/mail.png" alt="mail"> jeevaganayyanathan@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+      <div class="nav-sticky">
+        <div class="container">
+          <div class="navbar">
+            <a href="index.html"
+              ><img
+                src="../img/logo-tamil.svg"
+                style="width: 273px; height: 60px; margin-top: -10px"
+                alt="logo"
+            /></a>
+            <div class="navbar__right">
+              <ul class="navbar__right--bottom">
+                <li><a class="nav-link" href="index.html">முகப்பு</a></li>
+                <li>
+                  <a class="nav-link active" href="aboutme.html">பற்றி</a>
+                </li>
+                <!-- <li><a class="nav-link" href="../endoscope.html">ELECTIONS</a></li> -->
+                <li>
+                  <a class="nav-link" href="blogall.html"
+                    >செய்திகள் மற்றும் நிகழ்வுகள்</a
+                  >
+                </li>
+                <li><a class="nav-link" href="gallery.html">கேலரி</a></li>
+                <li>
+                  <a
+                    class="nav-link"
+                    data-toggle="modal"
+                    data-target=".contact-form__modal"
+                    >தொடர்பு</a
+                  >
+                </li>
+                <a href="birthdaywishes.html"
+                  ><button type="button" class="vote-btnstick">
+                    Wish for Thalapathy
+                  </button></a
+                >
+              </ul>
+              <div class="side-close">
+                <button class="btn btn-clear hamburger" onclick="showNav()">
+                  ☰
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SIDE MENU POP -->
+      <div class="sidebars">
+        <div class="sidenav-inner">
+          <a
+            href="javascript:void(0)"
+            class="sidenav-closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <ul class="side-popup">
+            <li><a href="index.html">முகப்பு</a></li>
+            <li><a class="nav-active" href="aboutme.html">பற்றி</a></li>
+            <!-- <li><a href="../endoscope.html">ELECTIONS</a></li> -->
+            <li><a href="blogall.html">செய்திகள் மற்றும் நிகழ்வுகள்</a></li>
+            <li><a href="gallery.html">கேலரி</a></li>
+            <li>
+              <a data-toggle="modal" data-target=".contact-form__modal"
+                >தொடர்பு</a
+              >
+            </li>
+            <li>
+              <select id="language1" class="side-lang-selector">
+                <option value="english">ENG</option>
+                <option value="tamil" selected>தமிழ்</option>
+              </select>
+            </li>
+            <!-- <a href="birthdaywishes.html"><button type="button" class="vote-btn">Wish for Thalapathy</button></a> -->
+          </ul>
+        </div>
+      </div>
+
+      <section class="logo-nav-section">
+        <div class="container">
+          <div class="logo-nav">
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="../img/logo-tamil.svg"
+                  style="width: 273px; height: 60px; margin-top: -10px"
+                  alt="logo"
+              /></a>
+            </div>
+            <div class="nav">
+              <div class="topnav" id="myTopnav">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  style="color: black; font-family: 'cera_probold'"
+                  >முகப்பு</a
+                >
+                <a class="nav-link active" href="aboutme.html">பற்றி</a>
+                <!-- <a class="nav-link" href="endoscope.html">ELECTIONS</a> -->
+                <a class="nav-link" href="blogall.html"
+                  >செய்திகள் மற்றும் நிகழ்வுகள்</a
+                >
+                <a class="nav-link" href="gallery.html">கேலரி</a>
+                <a
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target=".contact-form__modal"
+                  >தொடர்பு</a
+                >
+                <li class="nav-item">
+                  <div class="lang-drop">
+                    <select id="language" class="lang-selector">
+                      <option value="english">ENG</option>
+                      <option value="tamil" selected>தமிழ்</option>
+                    </select>
+                  </div>
+                </li>
+                <a href="birthdaywishes.html"
+                  ><button type="button" class="vote-btntm">
+                    Wish for Thalapathy
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="side-close">
+              <button class="btn btn-clear hamburger" onclick="showNav()">
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside
+        class="modal fade"
+        id="aboutModal-4"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="aboutModal-4"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="container modal-content">
+            <div class="about-modal-header">
+              <div class="container">
+                <button
+                  class="about-modal-header__close"
+                  type="button"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+            <h2 class="about-modal-header_tamil">
+              வெங்கடேஸ்வரா கல்லூரி மாணவருக்கு “ஓவியாசரல் விருது” வழங்கப்பட்டது
+            </h2>
+            <div class="about-modal-header-img5">
+              <img class="img-fluid" src="../img/n6.jpg" />
+            </div>
+            <div class="about-modal-body">
+              <div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>
+                      நாமக்கல் குரிஞ்சி கபிலர் மற்றும் மாவட்ட தமிழ் சங்கம்
+                      ஆகியோரால் நடத்தப்பட்ட டாக்டர் ஜீவகன் அய்யநாதனிடமிருந்து
+                      வெங்கடேஸ்வர கலை மற்றும் அறிவியல் கல்லூரி மாணவர்கள்
+                      எஸ்.சாந்தினி மற்றும் ஆர்.ஜோதிகா ஆகியோர் “ஓவியாசரல் விருது”
+                      வழங்கினர். கட்டுரை போட்டியில் வெற்றி பெற்ற ஆர். நீவி
+                      “எலகியா செல்வார் விருது” என வழங்கப்பட்டது. கவிதை போட்டி
+                      வெற்றியாளர் பி.அர்ச்சனாவுக்கு “பாவலார் விருது”
+                      வழங்கப்பட்டது. விருதுகளை A.R.J குழுமத்தின் நிருபர் டாக்டர்
+                      ஜீவகன் அய்யநாதன் வழங்கினார்.
+                    </p>
+                  </div>
+                  <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <aside
+        class="modal fade"
+        id="aboutModal-5"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="aboutModal-5"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="container-fluid modal-content">
+            <div class="about-modal-header">
+              <div class="container">
+                <button
+                  class="about-modal-header__close"
+                  type="button"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+            <h2 class="about-modal-header_tamil">
+              கே.எம். அய்யநாதன் நினைவு அஞ்சலி
+            </h2>
+            <div class="about-modal-header-img6">
+              <img class="img-fluid" src="../img/n5.jpg" />
+            </div>
+            <div class="about-modal-body">
+              <div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>
+                      A.R.J பொறியியல் கல்லூரி மற்றும் A.R.J குழும நிறுவன அலுவலர்
+                      K.M அய்யநாதனின் நினைவு சிலையை அவரது மகன் டாக்டர் ஜீவகன்
+                      அய்யநாதனால் தொடங்கப்பட்டது. இந்த நிகழ்வில் பொறியியல்
+                      மாணவர்கள், தலைமை ஆசிரியர் லோகநாதன், பாலிடெக்னிக் மாணவர்கள்
+                      தலைமை ஆசிரியர் கமலகண்ணன், ஏ.ஆர்.ஜே கல்லூரி நிர்வாக
+                      இயக்குநர் செல்வராஜ் மற்றும் சி.பி.எஸ்.இ பள்ளி துணைத்
+                      தலைவர் கோபிநாதன், துணைத் தலைவர்கள், பேராசிரியர்கள்,
+                      ஆசிரியர்கள் மற்றும் மாணவர்கள் கலந்து கொண்டனர்.
+                    </p>
+                  </div>
+                  <!-- <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est rerum ea iure
+                                        eius ratione, consequuntur, odio quae minima nam totam quas sapiente nostrum
+                                        officiis laboriosam qui recusandae maxime consequatur.</p>
+                                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="blog-ind-banner">
+        <div class="container">
+          <div class="blog-ind-img">
+            <div class="blog-ind-content col-12">
+              <!-- <img src="../img/latestnews.png" alt=""> -->
+              <h1 class="blog-ind-heading1">
+                பொது நேர்மை. தொழில்முறை முறை. அரசியல் குழுமம்
+              </h1>
+              <!-- <p class="blog-ind-heading2"><span><img src="../img/calendar1.png"> 07 JAN 2021</span></p> -->
+              <div class="circle-logo">
+                <img
+                  class="center"
+                  width="150px"
+                  height="150px"
+                  src="../img/dp-02.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- BLOG CONTENT---------------------- -->
+    <section class="blog_ind-section">
+      <div class="blog_ind-content">
+        <p class="blog_ind-para1">
+          டாக்டர் ஜீவகன் அய்யநாதன் 19<sup>th</sup> ஏப்ரல் 1973 அன்று தஞ்சை
+          மாவட்டம் பட்டுகோட்டையில் பிறந்தார். சென்னை ஸ்ரீ ராமச்சந்திர மருத்துவக்
+          கல்லூரி மற்றும் ஆராய்ச்சி நிறுவனத்தில் இருந்து எம்.பி.பி.எஸ் பட்டம்
+          பெற்றார், அண்ணாமலை பல்கலைக்கழகத்தின் ராஜா முத்தையா  மருத்துவக்
+          கல்லூரியில் டைபெடோலஜி டிப்ளமோ பெற்றார். A.A.A அறக்கட்டளை & A.R.J குழும
+          நிறுவனங்களின் நிறுவனர், துணைத் தலைவர் மற்றும் தாளாளர். டாக்டர் ஜீவகன்
+          தனது பெரிய தந்தை ஸ்ரீ.ம. கிருஷ்ணமூர்த்தி க்குப் பிறகு மூன்றாவது
+          தலைமுறையாக திமுகவின் கழகக் குடும்பத்தில் இருப்பவர்.  எம்.
+          கிருஷ்ணமூர்த்தி, ஒரு புகழ்பெற்ற அரசியல்வாதி, 1967 ஆம் ஆண்டில்
+          பேராவூரணி சட்டமன்றத் தொகுதியின் முதல் எம்.எல்.ஏ.வாக இருந்தார். அவர்
+          அறிஞர் அண்ணாவின் ஆட்சியிலும், திமுக கட்சிக்காகவும் 40 ஆண்டுகளுக்கும்
+          மேலாக பணியாற்றியவர். டாக்டர் ஜீவகன்,ஸ்ரீ. கே.ம். அய்யநாதனின் மூத்த
+          மகன், 1997-2001 காலகட்டத்தில் சென்னை கார்ப்பரேஷனின் நகர திட்டக் குழுத்
+          தலைவராக இருத்தவர். ஸ்ரீ. கே.ம்.அய்யநாதன் 40 ஆண்டுகளுக்கும் மேலாக
+          திமுகவுக்குச் சேவை செய்து வந்த தீவிர அரசியல்வாதி. தி.மு.க-வின் தலைமைச்
+          செயற் குழு  உறுப்பினர் மற்றும்  உயர்மட்ட குழு உறுப்பினராக இருந்தவர்.
+        </p>
+
+        <p class="blog_ind-sub-para1">
+          ஒரு கல்வியாளர் மற்றும் அரசியல்வாதி என அவரது புரிதல் என்னவென்றால்,
+          கல்வியாளருக்கு சமூகத்தில் ஒரு முக்கிய பங்கு உள்ளது. கல்வியாளர்
+          செய்யக்கூடிய முதல் விஷயம், மக்களது பிரச்சினைகளை நிவர்த்தி செய்வதாகும்.
+          கருத்தரங்கங்கள்,விரிவுரைகள், வெளியீடுகள் மற்றும் வெகுஜன ஊடகங்களின்
+          மூலமாக அவர் இதைச் செய்ய முடியும். சமூகத்தின் பிரச்னைகளை ஆய்வு
+          செய்வதின் மூலமாக அதற்கான தீர்வுகளை முன்மொழிகின்றார். எதிர்மறை
+          நிகழ்வுகளை விமர்சிப்பதன் மூலமாகத் தீர்வுகளுக்கு வழிகாட்டுதல்களை
+          வழங்குகின்ற தனது ஆக்கப்பூர்வமான நடவடிகளைக்கு என்ற எதிர்பார்ப்போடு
+          அனுதினமும் செயல்படுகிறார்.
+        </p>
+
+        <h2 class="blog_ind-head1">
+          டாக்டர் ஜீவகன் அய்யநாதனின் “வாழ்க்கைத் தத்துவம்”
+        </h2>
+
+        <div class="blog-ind-content-img">
+          <img class="mask-img" src="../img/lastbanner-01.jpg" alt="" />
+        </div>
+
+        <p class="blog_ind-para2">
+          டாக்டர் ஜீவகன் அய்யநாதனின் “வாழ்க்கை தத்துவம்” என்பதற்கு அவர் ஒரு மன
+          கட்டமைப்பைக் குறிக்கிறார் உலகம் எவ்வாறு இயங்குகிறது மற்றும் நீங்கள்
+          எவ்வாறு உலகத்துடன் பொருந்துகிறீர்கள் என்பதைப் புரிந்துகொள்வது.
+          வாழ்க்கையின் தத்துவம் அடங்கும் "நல்லது" மற்றும் "கெட்டது" எது,
+          "வெற்றி" என்றால் என்ன, வாழ்க்கையில் உங்கள் "நோக்கம்" என்ன என்பதை
+          நீங்கள் எவ்வாறு தீர்மானிக்கிறீர்கள் (ஒரு நோக்கம் இருப்பதாக நீங்கள்
+          நினைக்கவில்லை என்பது உட்பட), கடவுள் இருக்கிறாரா, ஒவ்வொரு
+          சூழ்நிலையிலும் நாம் எவ்வாறு நடந்து கொள்ள வேண்டும் முதலியன.
+        </p>
+        <p class="blog_ind-sub-para2"></p>
+
+        <section class="index-history text-center">
+          <div class="container">
+            <div class="head">
+              <h3>டாக்டர் ஜீவகன் அய்யநாதன்</h3>
+            </div>
+            <div class="timeline timeline--tamil row mx-auto">
+              <div class="col-sm-6 full">
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>01</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-1">பிறந்த இடம்</h4>
+                    <p>
+                      பட்டுகோட்டை தஞ்சை மாவட்டத்தில் 19<sup>th</sup> ஏப்ரல் 1973
+                      அன்று பிறந்தார்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>02</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-2">பள்ளிப்படிப்பு</h4>
+                    <p>
+                      அரும்பாக்கத்தில் உள்ள கோரபெருமல் செட்டி வைஷ்ணவ பள்ளியில்
+                      பள்ளி படிப்பை முடித்தார்
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>03</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-3">தந்தை</h4>
+                    <p>
+                      ஸ்ரீ. கே.ம்.அய்யநாதன்<br />
+                      சென்னை கார்ப்பரேஷனின் நகர திட்டக் குழுத் தலைவராக
+                      இருத்தவர்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>04</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-4">தாய்</h4>
+                    <p>திருமதி அ. ராஜகுமாரி</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>05</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-5">நிறுவனங்கள்</h4>
+                    <p>
+                      ARJ குழும நிறுவனங்கள் 2000 ஆம் ஆண்டில் அவரது தந்தையால்
+                      தொடங்கபட்டது .பின்னர் 2006 ஆண்டில் அவர் பொறுப் பேற்றார்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset-sm-1 col-sm-4 text-right number">
+                    <h4>06</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-6">சிறப்பு பயிற்சி</h4>
+                    <p>
+                      2001 அண்ணாமலை பல்கலைக்கழகத்தில், ராஜமுத்தையா மருத்துவக்
+                      கல்லூரில் டைபெடோலஜி டிப்ளமோ பெற்றார்.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 full">
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>07</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-7">பட்டப்படிப்பு</h4>
+                    <p>
+                      ஸ்ரீ ராமச்சந்திர உயர் கல்வி மற்றும் ஆராய்ச்சி கல்லுரி,
+                      சென்னை - <b>எம்.பி.பி.எஸ் பட்டம் பெற்றார்</b>.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>08</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-8">வேலை</h4>
+                    <p>
+                      கிரீம்ஸ் சாலையில் உள்ள அப்போலோ மருத்துவமனையில் இருதயவியல்
+                      துறை பணியாற்றினார்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>09</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-9">நிறுவனங்கள்</h4>
+                    <p>
+                      2013 ஆம் ஆண்டில் ஸ்ரீ வெங்கடேஸ்வரா கல்வி குழுமம்
+                      தொடங்கினார்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>10</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-10">அரசியல்</h4>
+                    <p>
+                      திமுக-வில் செயற்குழு உறுப்பினராக 30 ஆண்டுகளாக பணியாற்றி
+                      வருகிறார்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>11</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-11">நிறுவனர்</h4>
+                    <p>
+                      A.A.A அறக்கட்டளை & A.R.J குழுமத்தின் நிறுவனர், துணைத்
+                      தலைவர் மற்றும் தாளாளர்.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 text-right number">
+                    <h4>12</h4>
+                  </div>
+                  <div class="offset-sm-1 col-sm-6 text-left">
+                    <h4 class="num-12">உறுப்பினர்</h4>
+                    <p>
+                      திமுக-வில் மேற்கு சென்னை மருத்துவப் பிரிவில் மாவட்ட
+                      அமைப்பாளராக உள்ளார்.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container-fluid">
+          <div class="blog_ind-line">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE SECTION--------------------->
+    <section class="aboutme-article-section">
+      <div class="container">
+        <div class="aboutme-heartlogo">
+          <img src="../img/blueline.png" alt="" />
+          <p>RELATED ARTICLES</p>
+        </div>
+        <div class="aboutme-multi-blog-image">
+          <div class="aboutme-blog-img col-md-6">
+            <a data-toggle="modal" data-target="#aboutModal-4">
+              <div class="aboutme-blog1">
+                <div class="aboutme-blog-content">
+                  <img src="../img/arrow1.png" alt="" />
+                  <h1>
+                    வெங்கடேஸ்வரா கல்லூரி மாணவருக்கு “ஓவியாசரல் விருது”
+                    வழங்கப்பட்டது
+                  </h1>
+                  <p>
+                    நாமக்கல் குரிஞ்சி கபிலர் மற்றும் மாவட்ட தமிழ் சங்கம்
+                    ஆகியோரால் நடத்தப்பட்ட டாக்டர் ஜீவகன் அய்யநாதனிடமிருந்து
+                    வெங்கடேஸ்வர கலை மற்றும் அறிவியல் கல்லூரி மாணவர்கள்.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="aboutme-blog-img col-md-6">
+            <a data-toggle="modal" data-target="#aboutModal-5">
+              <div class="aboutme-blog2">
+                <div class="aboutme-blog-date"></div>
+                <div class="aboutme-blog-content">
+                  <img src="../img/arrow1.png" alt="" />
+                  <h1>கே.எம். அய்யநாதன் நினைவு அஞ்சலி</h1>
+                  <p>
+                    A.R.J பொறியியல் கல்லூரி மற்றும் A.R.J குழும நிறுவன அலுவலர்
+                    K.M அய்யநாதனின் நினைவு சிலை 2019 டிசம்பர் 04 அன்று மகன்
+                    டாக்டர் ஜீவகன் அய்யநாதனால் தொடங்கப்பட்டது
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTEMENT SECTION------------------ -->
+    <section class="appointment-section">
+      <div class="container">
+        <div class="appointment-img">
+          <div class="appointment-content col-md-10">
+            <!-- <img src="img/heartbeat.png" alt=""> -->
+            <h1 class="appointment-heading1">ஒரு நியமனம்</h1>
+            <h1 class="appointment-heading2">
+              தொடர்பில் இருங்கள்<br />
+              எங்களுடன்
+            </h1>
+          </div>
+          <div class="appointment-btn col-2">
+            <a
+              class="appoint-link"
+              data-toggle="modal"
+              data-target=".contact-form__modal"
+            >
+              தொடர்பு கொள்ள
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CONTACT SECTION---------------->
+    <section class="downSection">
+      <div class="container">
+        <div class="footer-section">
+          <div class="downIcon">
+            <a href="index.html"
+              ><img
+                src="../img/logo-tamil.svg"
+                style="width: 273px; height: 60px"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="downMenu">
+            <ul>
+              <li><a href="index.html">முகப்பு</a></li>
+              <li><a href="aboutme.html">பற்றி</a></li>
+              <!-- <li><a href="endoscope.html">ELECTIONS</a></li> -->
+              <li><a href="blogall.html"> செய்திகள் மற்றும் நிகழ்வுகள்</a></li>
+              <li><a href="gallery.html">கேலரி</a></li>
+              <li>
+                <a data-toggle="modal" data-target=".contact-form__modal"
+                  >தொடர்பு</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-line">
+          <p></p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-section">
+          <div class="footer1-section col-xl-8">
+            <div class="downPara">
+              <div class="addr">
+                <p>
+                  <img
+                    src="../img/map-pin.svg"
+                    style="width: 20px; height: 20px"
+                  /><span
+                    >Ayyanar Complex, Old No - 37 & 38, Pulla Avenue,
+                    Shenoynagar. Chennai-30.</span
+                  >
+                </p>
+              </div>
+
+              <div class="addr1">
+                <p>
+                  <img
+                    src="../img/mail.svg"
+                    style="width: 20px; height: 20px"
+                  /><span
+                    >drjeevaganayyanathan@gmail.com / contact@drjeevagan.com /
+                    arjgroup.world@gmail.com / svgroup.world@gmail.com</span
+                  >
+                </p>
+                <p>
+                  <img
+                    src="../img/phone.svg"
+                    style="width: 20px; height: 20px"
+                  /><span>+91- 98410 82222 / +91- 94449 88888</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer2-section col-xl-4">
+            <div class="icon-groupD">
+              <a
+                href="https://www.linkedin.com/in/jeevagan-ayyanathan-b90590203/ "
+                target="blank"
+                ><img
+                  src="../img/linkedin.svg"
+                  alt=" "
+                  width="30px"
+                  height="30px"
+              /></a>
+              <a
+                href="https://www.facebook.com/drjeevaganayyanathan"
+                target="blank"
+                ><img
+                  src="../img/facebook.svg"
+                  alt=" "
+                  width="30px"
+                  height="30px"
+              /></a>
+              <a href="https://www.instagram.com/dr_jeevagan/" target="blank"
+                ><img
+                  src="../img/instagram.svg"
+                  alt=" "
+                  width="30px"
+                  height="30px"
+              /></a>
+              <a href="https://twitter.com/dr_jeevagan " target="blank"
+                ><img
+                  src="../img/twitter.svg"
+                  alt=" "
+                  width="30px"
+                  height="30px"
+              /></a>
+            </div>
+            <div class="copyright">
+              <ul>
+                <li>
+                  <a href="https://drjeevagan.com/">www.drjeevagan.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER-------------- -->
+    <footer class="footer-text">
+      <!-- <p>ALL COPYRIGHTS JEEVAGANAYYANATHAN.COM</p> -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/validation.js"></script>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
